@@ -1,7 +1,7 @@
 // worker.js
 export default {
   async fetch(request, env, ctx) {
-    const backendHostname = "clever-emu-3jns34x.trycloudflare.com"; // Change here when tunnel updates
+    const backendHostname = "https://comply-mysimon-researchers-wonder.trycloudflare.com/"; // Change here when tunnel updates
     const url = new URL(request.url);
     url.hostname = backendHostname;
     return fetch(url.toString(), {
